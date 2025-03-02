@@ -2,6 +2,10 @@
 
 A retro Snake game with a modern cyberpunk twist! Built with HTML5 Canvas and JavaScript, featuring neon effects, glowing elements, and a dark futuristic theme.
 
+## 🎮 Play Online
+
+**[Play the game now!](https://mariagorskikh.github.io/snakegame)**
+
 ![Cyberpunk Snake Game](preview.png)
 
 ## 🎮 Features
@@ -13,14 +17,6 @@ A retro Snake game with a modern cyberpunk twist! Built with HTML5 Canvas and Ja
 - Grid background with subtle cyberpunk aesthetics
 - Wall wrapping mechanics
 - Game over screen with restart option
-
-## 🚀 Play Now
-
-You can play the game directly in your browser:
-1. Clone this repository
-2. Open `index.html` in your browser
-3. Use arrow keys to control the snake
-4. Press SPACE to restart after game over
 
 ## 🎯 How to Play
 
@@ -43,10 +39,10 @@ To run the game locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/cyberpunk-snake.git
+git clone https://github.com/mariagorskikh/snakegame.git
 
 # Navigate to the project directory
-cd cyberpunk-snake
+cd snakegame
 
 # Start a local server (Python 3)
 python -m http.server 8000
