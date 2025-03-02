@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Snake</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0a0a0f;
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            background: linear-gradient(45deg, #0a0a0f 0%, #1a1a2e 100%);
+        }
+        
+        canvas {
+            border: 3px solid #8a2be2;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px #8a2be2, 
+                       0 0 40px rgba(138, 43, 226, 0.5);
+            border-radius: 5px;
+        }
+        
+        #score {
+            font-size: 28px;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #e100ff;
+            text-shadow: 0 0 10px #e100ff,
+                         0 0 20px #e100ff;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #e100ff,
+                            0 0 20px #e100ff;
+            }
+            to {
+                text-shadow: 0 0 15px #e100ff,
+                            0 0 25px #e100ff,
+                            0 0 30px #e100ff;
+            }
+        }
+        
+        .game-container {
+            position: relative;
+        }
+        
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #e100ff;
+            text-shadow: 0 0 10px #e100ff;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div class="game-over" id="gameOverScreen">
+            <h1>GAME OVER</h1>
+            <p>Press SPACE to restart</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
